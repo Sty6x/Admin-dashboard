@@ -90,23 +90,54 @@ body{
 .logo-p{
     padding-bottom: 1em;
 }
-input[type='search']{
-    border: #1e293b 1px solid;
-    border-radius: 6px;
-}
-label::before{
-    content: '';
-    position: relative;
-    background-size: 20px 20px; 
-    background-repeat: no-repeat;  
-    padding: 10px;
-    top: 8px;
-    background-image: url("/resources/img/magnify.png");
-}
 
 .header{
     padding: 2em;
     display: grid;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2,.6fr);
+    row-gap: 2em;
 }
 
+.header>.upper,.nav-left, .lower, .lower>.name-profile, .lower>.user-nav{
+    display: flex;
+    align-items: center;
+}
+.upper,
+.lower{
+    justify-content: space-between;
+}
+
+/* upper header contents here */
+.bell,.login-profile{
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+.search-right{
+    display: flex;
+    gap: 10px;
+}
+input[type='search']{
+    width: 500px;
+    flex: 1 1 auto;
+    border: #1e293b 1px solid;
+    border-radius: 6px;
+}
+
+div.upper > .nav-left{
+    gap: 1em;
+}
+
+/* lower header contents here */
+.name-profile > .user-pp-lower{
+    width: 70px;
+    height: 70px;
+}
+.name-profile>.name-and-at{
+    padding-left: 1em;
+} 
+
+.lower > .user-nav{
+    gap: 1em;;
+}
