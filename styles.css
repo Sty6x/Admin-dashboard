@@ -299,18 +299,18 @@ a:visited,a:link{
     height: 25px;
 }
 
+.main-content-container>h1{
+    grid-column: 1/span 2;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: end;
+}
 
 /* side container */
 .side-main-container{
 outline: #1e293b solid 1px;
 grid-column: 2;
 
-}
-.main-content-container>h1{
-    grid-column: 1/span 2;
-    font-weight: bold;
-    font-size: 2rem;
-    align-self: end;
 }
 
 
