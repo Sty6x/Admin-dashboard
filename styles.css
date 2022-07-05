@@ -242,5 +242,76 @@ a:visited,a:link{
 .main-container{
     background-color: #cbd5e1;
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2,auto);
 }
 
+.main-content-container{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5em;
+    row-gap: 2em;
+    column-gap: 7em;
+}
+
+.project-container{
+    padding: 3em 6em 1.5em 2em;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    /* Box shadow a placeholder */
+    box-shadow: -5px 0px #1e293b; 
+    /* Box shadow a placeholder */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 10em; */
+}
+
+.title-para{
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+}
+
+.title-para >p {
+    line-height: 16px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0,.5);
+}
+.title-para>h2{
+    font-weight: bold;    
+    font-size: 1.4rem;
+}
+
+.interactive{
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+.interactive-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.side-content{
+    outline: #1e293b solid 1px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.main-container > .yp {
+    grid-column: 1;
+}
+.main-container > .ann{
+    grid-column: 2;
+}
+.main-container > h1{
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: end;
+}
