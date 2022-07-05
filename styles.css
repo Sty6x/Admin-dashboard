@@ -238,19 +238,20 @@ a:visited,a:link{
     /* outline: #f8fafc solid 1px; */
 }
 
+
+
 /* main content */
 .main-container{
     background-color: #cbd5e1;
     grid-area: 2/2/3/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2,auto);
 }
 
 .main-content-container{
     display: grid;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
     grid-template-columns: repeat(2,1fr);
     padding: 5em;
     row-gap: 2em;
@@ -298,20 +299,20 @@ a:visited,a:link{
     height: 25px;
 }
 
-.side-content{
-    outline: #1e293b solid 1px;
-    grid-column: 2;
-    grid-row: 2;
-}
 
-.main-container > .yp {
-    grid-column: 1;
+/* side container */
+.side-main-container{
+outline: #1e293b solid 1px;
+grid-column: 2;
+
 }
-.main-container > .ann{
-    grid-column: 2;
-}
-.main-container > h1{
+.main-content-container>h1{
+    grid-column: 1/span 2;
     font-weight: bold;
     font-size: 2rem;
-    align-items: end;
+    align-self: end;
+}
+
+
+.side-content{
 }
