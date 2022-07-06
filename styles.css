@@ -392,9 +392,9 @@ a:link {
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;
-    /* Box shadow a placeholder */
-    box-shadow: -5px 0px #1e293b;
-    /* Box shadow a placeholder */
+    border-left:10px solid #1e293b;
+    box-shadow: 7px 7px 7px rgb(0, 0, 0,.3);
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -487,11 +487,14 @@ a:link {
     line-height: 13px;
     width: auto;
     height: max-content;
+
+    box-shadow: 7px 7px 7px rgb(0, 0, 0,.3);
 }
 .announcement-contents >li {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    
 }
 li > h1{
     font-weight: bold;
@@ -502,7 +505,8 @@ li > h1{
     flex-direction: column;
     gap: 1em;
     padding: 2em 2em 3em 2em;
-    /* width: 70%; */
+
+    box-shadow: 7px 7px 7px rgb(0, 0, 0,.3);
 }
 
 .other-user-image{
