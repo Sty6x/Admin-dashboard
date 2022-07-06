@@ -181,11 +181,10 @@ body {
 
 /* upper header contents here */
 
-.nav-left>li>p {
+.user-name{
     font-weight: bold;
     font-size: 1.3rem;
 }
-
 .bell {
     width: 25px;
     height: 25px;
@@ -429,6 +428,11 @@ a:link {
 }
 
 
+.upper-p{
+    color: rgb(0, 0, 0, .5);
+    line-height: 16px;
+}
+
 .announce{
     grid-row: 2;
 }
@@ -460,19 +464,16 @@ a:link {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 3em;
+    padding: 2em 2em 3em 2em;
     line-height: 13px;
+    width: auto;
+    height: max-content;
 }
 .announcement-contents >li {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-li >p {
-    color: rgb(0, 0, 0, .5);
-    font-size: 1rem;
-}
-
 li > h1{
     font-weight: bold;
 }
@@ -480,6 +481,27 @@ li > h1{
 .trending-contents{
     display: flex;
     flex-direction: column;
-    gap: 3em;
-    padding: 3em;
+    gap: 1em;
+    padding: 2em 2em 3em 2em;
+    /* width: 70%; */
+}
+
+.other-user-image{
+    width: 40px;
+    height: 40px;
+}
+.other-user-info{
+    color: rgb(0, 0, 0, .5);
+    font-size: .7em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+a.other-user-profile{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.other-user-atme{
+    color: black;
 }
