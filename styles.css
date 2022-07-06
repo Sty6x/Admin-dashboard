@@ -208,21 +208,39 @@ div.upper>.nav-left {
 
 label>img {
     width: 25px;
-    padding-top: 3px;
+    padding-top: 10px;
 }
 
 input[type='search'] {
     appearance: none;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     border-radius: 15px;
-    width: max(45vw, 50px);
+    width: max(45vw, 100px);
     height: 3em;
     border: rgba(231, 231, 231, 1) 1px solid;
     background-color: rgba(231, 231, 231, 0.8);
-    padding-left: 15px;
+    padding: 10px 10px 10px 15px;
+    font-size: 13px;
+}
+
+input[type='search']:focus ~ span::after{
+    content: "";
+} 
+
+span::after{
+    content: "Search... ";
+    position: absolute;
+    color: rgb(0, 0, 0,.4);
+    left: 15px;
+    bottom: 10px;
+    font-size: 20px;
 }
 
 
+.search-som{
+    /* outline: black 1px solid; */
+    position: relative;
+}
 /* lower header contents here */
 .name-profile>.user-pp-lower {
     width: 80px;
